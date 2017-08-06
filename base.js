@@ -3,10 +3,13 @@ var input = $("#input").val();
 var currency = $("#currency").val();
 var convertTo = $("#convertTo").val();
 var converted;
-var dateObject;
+var dateObject = new Date().toISOString().slice(0,10);
+
+$("#datepicker").val(dateObject);
 
 // Get date with date box and add it on the API url
 $("#datepicker").datepicker({
+	defaultDate: dateObject,
     changeMonth: true,
     changeYear: true,
     dateFormat: "yy-mm-dd",
