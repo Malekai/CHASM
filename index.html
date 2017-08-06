@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Forex Conversion by CHASM Co.</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+<!--header-->
+<div class="container">
+  <div class="header"><a href="index.html"><img src="logohead.PNG" alt="Chasm Co. logo" width="458" height="272" id="Logo" /></a> </div>
+  <div class="nav"> <h2><a href="index.html">Home</a><a href="#about">About</A> </h2> </div>
+ <!--end. header-->
+  <div class="content">
+    <h1>Forex Conversion</h1>
+    <p>
+    <!--Converter goes here! -->
+    <div class="conversion">
+      <form id="target">
+        Choose currency and amount:<br><br>
+        Date: <input type="text" id="datepicker"><br><br>
+        <select id="currency">
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="GBP">GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="USD" selected="selected">USD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input id="input" type="text" /><br>
+        <br>
+          <span id="reverse"><i class="fa fa-arrows-v" aria-hidden="true"> </i> Reverse</span>
+        <br><br>
+        Choose currency to convert to:<br><br>
+        <select id="convertTo">
+          <option value="AUD">AUD</option>
+          <option value="BGN">BGN</option>
+          <option value="BRL">BRL</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CNY">CNY</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="GBP" selected="selected">GBP</option>
+          <option value="HKD">HKD</option>
+          <option value="HRK">HRK</option>
+          <option value="HUF">HUF</option>
+          <option value="IDR">IDR</option>
+          <option value="ILS">ILS</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="MXN">MXN</option>
+          <option value="MYR">MYR</option>
+          <option value="NOK">NOK</option>
+          <option value="NZD">NZD</option>
+          <option value="PHP">PHP</option>
+          <option value="PLN">PLN</option>
+          <option value="RON">RON</option>
+          <option value="RUB">RUB</option>
+          <option value="SEK">SEK</option>
+          <option value="SGD">SGD</option>
+          <option value="THB">THB</option>
+          <option value="TRY">TRY</option>
+          <option value="USD">USD</option>
+          <option value="ZAR">ZAR</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+      <br>
+      <div class="converted"> 
+        <h1 id="convertedNumber"></h1>
+      </div>
+    </div>
+    
+    </p>
+    <!--mock ads in place of Google Adsense-->
+    <div class="adwide"><img src="adexample1.png" /></div>
+    <div class="adnarrow"><img src="adexample2.png" /></div>
+    <br /><br />
+    <h1>About<A NAME="about"></h1>
+    <p>	CHASM Co. is a start-up based in NYC that offers users an easy to use free currency converter. Our business objectives are to provide an easy to use currency converter for free and to launch the growth of the company. If you would like to support our endeavors, please click on an ad!</p>
+    <br />
+    <br />
+    <div class="adwide"><img src="adexample1.png" /></div>
+    <div class="adnarrow"><img src="adexample2.png" /></div>
+    <br />
+    <br />
+    
+    <!-- end .content -->
+    </div>
+  <div class="footer">
+    <p>CHASM Corporation &#169 2017</p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="http://openexchangerates.github.io/money.js/money.min.js"></script>
+  <script type="text/javascript" src="base.js"></script> 
+</body>
+</html>
